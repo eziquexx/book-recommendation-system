@@ -8,4 +8,7 @@ public interface AuthRepository extends JpaRepository<User, Long> {
   
   // 아이디 중복 체크
   boolean existsByUsername(String username);
+
+  // 아이디로 찾기
+  User findByUsername(String username);
 }
